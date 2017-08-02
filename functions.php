@@ -2,7 +2,7 @@
 /**
  * FoundationPress functions and definitions
  *
- * @package jaybauerstarter
+ * @package EliteDigitalBase
  * @since 1.0
 */
 
