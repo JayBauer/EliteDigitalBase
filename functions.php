@@ -47,3 +47,15 @@ require_once( 'library/responsive-images.php' );
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
 
 require_once( 'library/repeatables.php' );
+
+
+function elitedigitalbase_noupdate( $r, $url ) {
+    if ( 0 !== strpos( $url, 'http://api.wordpress.org/themes/update-check' ) )
+        return $r;
+    $themes = unserialize( $r['body']['themes'] );
+    unset( $themes[ get_option( 'template' ) ] );
+    unset( $themes[ get_option( 'stylesheet' ) ] );
+    $r['body']['themes'] = serialize( $themes );
+    return $r;
+}
+add_filter( 'http_request_args', 'elitedigitalbase_noupdate', 5, 2 );
