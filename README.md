@@ -1,8 +1,6 @@
-# FoundationPress
+# Wordpress + Foundation = FoundationPress, get at it fellas
 
-This is a starter-theme for WordPress based on Foundation 6, the most advanced responsive (mobile-first) framework in the world. The purpose of FoundationPress, is to act as a small and handy toolbox that contains the essentials needed to build any design. FoundationPress is meant to be a starting point, not the final product.
-
-This theme has been modified by Jay Bauer for Elite Digital, for use as a base theme on all Foundation-based projects.
+This is a starter-theme for WordPress based on Foundation 6, originally created by Ole Fredrick but modified (legally) under the MIT Licence for use at Elite Digital. All y'all can do what you please with it.
 
 ## Requirements
 
