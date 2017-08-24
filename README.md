@@ -32,13 +32,14 @@ If you want to take advantage of browser-sync (automatic browser refresh when a 
 $ npm run watch
 ```
 
-### 3. For building all the assets, run:
+### 3. Building assets:
 
+Run this command to build all assets (same as ```npm run watch``` but minus the watch part):
 ```bash
 $ npm run build
 ```
 
-Build all assets minified and without sourcemaps:
+Build all assets minified and without sourcemaps (run this for distribution builds):
 ```bash
 $ npm run production
 ```
@@ -59,7 +60,7 @@ Running this command will build and minify the theme's assets and place a `.zip`
  * `assets/scss/global/*.scss`: Global settings
  * `assets/scss/components/*.scss`: Buttons etc.
  * `assets/scss/modules/*.scss`: Topbar, footer etc.
- * `assets/scss/templates/*.scss`: Page template spesific styling
+ * `assets/scss/templates/*.scss`: Page template specific styling
 
 Please note that you **must** run `npm run build` or `npm run watch` in your terminal for the styles to be copied and concatenated. See the gulpfile.js for details.
 
